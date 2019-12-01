@@ -8,7 +8,7 @@ namespace laba3_1
         [STAThread]
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите координаты прямооугольника.");
+            Console.WriteLine("Введите координаты прямоугольника.");
             Console.Write("x1 = ");
             x1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("y1 = ");
@@ -18,9 +18,10 @@ namespace laba3_1
             Console.Write("y2 = ");
             y2 = Convert.ToInt32(Console.ReadLine());
             Rectangles rectangle = new Rectangles(x1, y1, x2, y2);
-            Rectangle_potomok potomok = new Rectangle_potomok(x1, y1, x2, y2);
+            //Rectangle_potomok potomok = new Rectangle_potomok(x1, y1, x2, y2);
+            rectangle.Forms();
             Console.WriteLine(rectangle.ToString());
-            potomok.Forms();
+            //potomok.Forms();
             Console.Write("Press any key to continue . . . ");
             Console.ReadKey(true);
         }

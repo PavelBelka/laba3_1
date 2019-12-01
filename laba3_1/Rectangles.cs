@@ -1,9 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using System.Windows.Forms;
+using System.Drawing;
 namespace laba3_1
 {
     class Rectangles
@@ -28,6 +25,19 @@ namespace laba3_1
             { 
                 return (int)Math.Sqrt(Math.Pow(X1 - X2, 2) + Math.Pow(Y1 - Y2, 2));
             }
+        }
+
+        public void Forms()
+        {
+            Form Form1 = new Form();
+            Form1.Size = new Size(300, 300);
+            Form1.BackgroundImage = new Bitmap(300, 300);
+            Rectangle recrt = new Rectangle(X1, Y1, Math.Abs(X1 - X2), Math.Abs(Y1 - Y2));         
+            Pen pen = new Pen(Color.Black, 2);
+            Graphics gr = Graphics.FromImage(Form1.BackgroundImage);
+            gr.DrawRectangle(pen, recrt);
+            gr.DrawLine(pen, X1, Y1, X2, Y2);
+            Form1.Show();
         }
 
         public override string ToString()
