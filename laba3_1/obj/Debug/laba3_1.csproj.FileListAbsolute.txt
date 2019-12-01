@@ -1,0 +1,6 @@
+F:\документы\Белка\ПОИП\Лаба 3\laba3_1\laba3_1\bin\Debug\laba3_1.exe.config
+F:\документы\Белка\ПОИП\Лаба 3\laba3_1\laba3_1\bin\Debug\laba3_1.exe
+F:\документы\Белка\ПОИП\Лаба 3\laba3_1\laba3_1\bin\Debug\laba3_1.pdb
+F:\документы\Белка\ПОИП\Лаба 3\laba3_1\laba3_1\obj\Debug\laba3_1.csprojAssemblyReference.cache
+F:\документы\Белка\ПОИП\Лаба 3\laba3_1\laba3_1\obj\Debug\laba3_1.exe
+F:\документы\Белка\ПОИП\Лаба 3\laba3_1\laba3_1\obj\Debug\laba3_1.pdb
