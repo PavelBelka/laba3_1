@@ -5,7 +5,7 @@ namespace laba3_1
 {
     class Rectangles
     {
-        int X1, X2, Y1, Y2;
+        protected int X1, X2, Y1, Y2;
 
         public Rectangles()
         {
@@ -30,8 +30,8 @@ namespace laba3_1
         public void Forms()
         {
             Form Form1 = new Form();
-            Form1.Size = new Size(300, 300);
-            Form1.BackgroundImage = new Bitmap(300, 300);
+            Form1.Size = new Size(X2 + 100, Y2 + 100);
+            Form1.BackgroundImage = new Bitmap(X2 + 100, Y2 + 100);
             Rectangle recrt = new Rectangle(X1, Y1, Math.Abs(X1 - X2), Math.Abs(Y1 - Y2));         
             Pen pen = new Pen(Color.Black, 2);
             Graphics gr = Graphics.FromImage(Form1.BackgroundImage);
