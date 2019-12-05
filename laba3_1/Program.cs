@@ -17,7 +17,7 @@ namespace laba3_1
             x2 = Convert.ToInt32(Console.ReadLine());
             Console.Write("y2 = ");
             y2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Введите радиус окружности описанной R:");
+            Console.WriteLine("Введите радиус окружности вписанной R:");
             r = Convert.ToInt32(Console.ReadLine());
             Rectangle_potomok potomok = new Rectangle_potomok(x1, y1, x2, y2, r);
             Rectangles rectangle = new Rectangles(x1, y1, x2, y2);

@@ -15,7 +15,7 @@ namespace laba3_1
             }
             set
             {
-                if ((value < (X2 - X1)) && (value < (Y2 - Y1)))
+                if ((value < ((X2 - X1) / 2)) && (value < ((Y2 - Y1) / 2)))
                 {
                     radius = value;
                 }
@@ -40,21 +40,21 @@ namespace laba3_1
             Pen pen = new Pen(Color.Black, 2);
             Graphics gr = Graphics.FromImage(Form_circle.BackgroundImage);
             gr.DrawRectangle(pen, recrt);
-            gr.DrawEllipse(pen, X2 / 2, Y2 / 2, R, R);
+            gr.DrawEllipse(pen, (X2 / 2) - R, (Y2 / 2) - R, R * 2, R * 2);
             Form_circle.Show();
         }
 
-        double Square
+        int Square
         {
             get
             {
-                return ((X2 - X1) * (Y2 - Y1)) - (Math.PI * Math.Pow(R, 2));
+                return ((X2 - X1) * (Y2 - Y1)) - (int)(Math.PI * Math.Pow(R, 2));
             }
         }
 
         public override string ToString()
         {
-            return $"Класс потомок\nПрямоугольник с координатами [{X1}, {Y1}] и [{X2}, {Y2}] и окружностью радиуса {R} имеет площадь\nфигуры между кругом и прямоугольником:\nS = {Square}";
+            return $"Класс потомок:\nПрямоугольник с координатами [{X1}, {Y1}] и [{X2}, {Y2}] и окружностью радиуса {R} имеет площадь\nфигуры между кругом и прямоугольником:\nS = {Square}";
         }
 
     }

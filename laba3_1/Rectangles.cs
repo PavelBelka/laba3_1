@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
+
 namespace laba3_1
 {
     class Rectangles
@@ -42,7 +43,7 @@ namespace laba3_1
 
         public override string ToString()
         {
-            return $"Основной класс\nПрямоугольник с координатами [{X1}, {Y1}] и [{X2}, {Y2}] имеет диагональ:\nd = {DIAGONAL}";
+            return $"Основной класс:\nПрямоугольник с координатами [{X1}, {Y1}] и [{X2}, {Y2}] имеет диагональ:\nd = {DIAGONAL}";
         }
     }
 }
